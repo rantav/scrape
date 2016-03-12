@@ -5,12 +5,12 @@ import errno
 import shutil
 import re
 
-website = 'summit2015.reversim.com'
+website = 'summit2014.reversim.com'
 
 
 class MySpider(scrapy.Spider):
     name = 'rs'
-    start_urls = ['http://summit2015.reversim.com/?_escaped_fragment_=']
+    start_urls = ['http://summit2014.reversim.com/?_escaped_fragment_=']
     allowed_domains = [website]
 
     def parse(self, response):
@@ -51,7 +51,7 @@ def mkdir(filename):
 
 
 def rm(path):
-    shutil.rmtree(path)
+    shutil.rmtree(path, ignore_errors=True)
 
 
 rm(website)

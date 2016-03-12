@@ -1,6 +1,8 @@
 .v
 .DS_Store
 summit2015.reversim.com
+summit2014.reversim.com
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
